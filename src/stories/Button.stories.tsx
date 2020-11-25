@@ -3,6 +3,7 @@ import React from 'react';
 import { Story, Meta } from '@storybook/react/types-6-0';
 
 import { Button, ButtonProps } from './Button';
+import { TEST } from '../macro';
 
 export default {
   title: 'Example/Button',
@@ -17,7 +18,7 @@ const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 export const Primary = Template.bind({});
 Primary.args = {
   primary: true,
-  label: 'Button',
+  label: TEST,
 };
 
 export const Secondary = Template.bind({});

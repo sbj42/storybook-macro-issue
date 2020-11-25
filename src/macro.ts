@@ -1,0 +1,1 @@
+export const TEST = 'from macro.ts';
